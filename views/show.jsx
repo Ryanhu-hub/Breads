@@ -15,8 +15,8 @@ function Show({ bread, index }) {
       <img src={bread.image} alt={bread.name} />{" "}
       <form action={`/breads/${index}?_method=DELETE`} method="POST">
         <input type="submit" value="DELETE" />
-        <a href={`/breads/${index}/edit`}><button>Edit</button></a>
       </form>
+      <a href={`/breads/${index}/edit`}><button>Edit</button></a>
       <li>
         <a href="/breads">Go home</a>
       </li>
